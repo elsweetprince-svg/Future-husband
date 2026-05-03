@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Barela | Your Future Starts Now</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --card: #1c1c1e;
+            --accent: #0071e3;
+            --text: #f5f5f7;
+            --secondary: #86868b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            max-width: 800px;
+        }
+        .badge {
+            background: rgba(0, 113, 227, 0.15);
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        h1 { font-size: 56px; font-weight: 700; margin: 0; letter-spacing: -0.02em; }
+        .hero p { font-size: 24px; color: var(--secondary); margin-top: 10px; }
+        
+        .profile-pic {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 28px;
+            margin: 40px 0;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1000px;
+            padding-bottom: 40px;
+        }
+        .card {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 32px;
+        }
+        h3 { font-size: 22px; margin-top: 0; color: var(--text); }
+        .card p { color: var(--secondary); line-height: 1.6; font-size: 17px; margin-bottom: 10px; }
+
+        .tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+        .tag { background: #2c2c2e; padding: 6px 14px; border-radius: 10px; font-size: 13px; color: var(--text); }
+
+        .contact-section {
+            text-align: center;
+            padding: 40px 20px 100px 20px;
+        }
+        .contact-text {
+            font-size: 18px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        .cta {
+            background: var(--accent);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+        }
+        ul { list-style: none; padding: 0; color: var(--secondary); }
+        li { margin-bottom: 12px; font-size: 17px; }
+        strong { color: var(--text); }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="badge">Version 2026.0</div>
+        <h1>Your future starts now.</h1>
+        <p>Adam Barela • 34</p>
+        <img src="https://i.ibb.co/6Ry6Mn3r/image-2.png" alt="Adam Barela" class="profile-pic">
+    </div>
+
+    <div class="bento-grid">
+        <div class="card">
+            <h3>Executive Profile</h3>
+            <p>High-reliability family man (34) currently in a health relaunch phase. Specializing in the Tucson-Phoenix business corridor and high-protein culinary arts.</p>
+            <p><strong>Status:</strong> No kids. One hyperactive best friend named Ben.</p>
+        </div>
+
+        <div class="card">
+            <h3>The Audio Experience</h3>
+            <p>A curated mix of festival energy and smooth rotations.</p>
+            <div class="tag-cloud">
+                <span class="tag">AFI</span>
+                <span class="tag">System of a Down</span>
+                <span class="tag">Bad Bunny</span>
+                <span class="tag">Kendrick Lamar</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Lifestyle & Logic</h3>
+            <p>Passionate about strength training, pickleball, and walks with Ben. Just as happy with an epic fantasy marathon as a night out.</p>
+        </div>
+
+        <div class="card">
+            <h3>Areas of Opportunity</h3>
+            <ul>
+                <li><strong>Cold Start:</strong> Requires caffeine to reach peak performance.</li>
+                <li><strong>Logic Loop:</strong> Highly stubborn; rarely wrong.</li>
+                <li><strong>Interface:</strong> Sarcasm is the default operating language.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <p class="contact-text">To request future husband please contact</p>
+        <button class="cta" onclick="alert('Reach out via the app or text!')">Inquire Now</button>
+    </div>
+
+    <div style="color: #424245; font-size: 12px; margin-bottom: 40px; text-align: center;">
+        Designed in Arizona • No kids. Just Ben.
+    </div>
+
+</body>
+</html>
