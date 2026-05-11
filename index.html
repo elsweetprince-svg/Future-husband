@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Barela | Your Future Starts Now</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --card: #111111;
+            --accent: #d4af37; 
+            --text: #ffffff;
+            --secondary: #8e8e93;
+        }
+        body {
+            font-family: "SF Pro Display", -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(0,0,0,0.9);
+            padding: 20px 0;
+            border-bottom: 1px solid #222;
+            z-index: 1000;
+            text-align: center;
+        }
+        nav a { color: var(--text); text-decoration: none; margin: 0 25px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.6; transition: 0.3s; }
+        nav a:hover { opacity: 1; color: var(--accent); }
+
+        .hero { text-align: center; padding: 120px 20px; }
+        .badge { color: var(--accent); font-size: 12px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; display: block; font-weight: 600; }
+        h1 { font-size: clamp(40px, 8vw, 70px); font-weight: 700; margin: 0; letter-spacing: -0.04em; }
+        .hero p { font-size: 22px; color: var(--secondary); margin-top: 15px; font-weight: 300; }
+        
+        .profile-pic { width: 90%; max-width: 420px; border-radius: 20px; margin-top: 50px; border: 1px solid #333; }
+
+        .section-wrap { width: 90%; max-width: 1100px; margin: 0 auto; padding: 80px 0; }
+        .section-header { margin-bottom: 50px; }
+        .section-header h2 { font-size: 32px; border-left: 3px solid var(--accent); padding-left: 20px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .card { background: var(--card); padding: 40px; border-radius: 4px; border: 1px solid #222; transition: 0.5s; }
+        .card:hover { border-color: var(--accent); }
+        .card h3 { font-size: 18px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px; color: var(--accent); }
+
+        .stat-row { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #222; font-size: 15px; }
+        .stat-label { color: var(--secondary); }
+        
+        .cta-wrap { text-align: center; padding: 100px 20px; background: #080808; border-top: 1px solid #111; }
+        .cta-btn { border: 1px solid var(--accent); color: var(--accent); padding: 20px 50px; text-decoration: none; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; transition: 0.4s; background: transparent; cursor: pointer; }
+        .cta-btn:hover { background: var(--accent); color: #000; }
+
+        footer { text-align: center; padding: 60px; color: #444; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#provisions">Credentials</a>
+        <a href="#lifestyle">Lifestyle</a>
+        <a href="#values">Expectations</a>
+    </nav>
+
+    <div class="hero">
+        <span class="badge">The 2026 Collection</span>
+        <h1>Your future starts now.</h1>
+        <p>Adam Barela • 34</p>
+        <img src="https://i.ibb.co/6Ry6Mn3r/image-2.png" alt="Adam Barela" class="profile-pic">
+    </div>
+
+    <div id="provisions" class="section-wrap">
+        <div class="section-header">
+            <h2>The Credentials</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Vetting & Assets</h3>
+                <div class="stat-row"><span class="stat-label">Professional Status</span> <span>Active / Banking Industry</span></div>
+                <div class="stat-row"><span class="stat-label">Ownership</span> <span>Personal Vehicle</span></div>
+                <div class="stat-row"><span class="stat-label">Legal Standing</span> <span>Exemplary / No Record</span></div>
+                <div class="stat-row"><span class="stat-label">Personal Habits</span> <span>Non-Smoker</span></div>
+                <div class="stat-row"><span class="stat-label">Legacy</span> <span>None yet, but open to a family</span></div>
+            </div>
+            <div class="card">
+                <h3>The Daily Companion</h3>
+                <p><strong>Ben:</strong> A premier companion—timid yet high-energy. He is a cherished part of my life and a great partner for my daily outdoor routine.</p>
+                <p><strong>Demeanor:</strong> Native sarcasm delivered with high-level logic. Reaches optimal engagement levels after the morning coffee ritual.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="lifestyle" class="section-wrap">
+        <div class="section-header">
+            <h2>Lifestyle & Enrichment</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>The Value of Partnership</h3>
+                <p>I bring a protective, grounded energy to a relationship. My love language is reliability—I specialize in the "Acts of Service" that ensure our collective peace remains undisturbed.</p>
+            </div>
+            <div class="card">
+                <h3>Curated Interests</h3>
+                <div class="stat-row"><span class="stat-label">Audio</span> <span>AFI, Bad Bunny, Kendrick Lamar</span></div>
+                <div class="stat-row"><span class="stat-label">Leisure</span> <span>Supernatural Horror & Fantasy Epics</span></div>
+                <div class="stat-row"><span class="stat-label">Physical</span> <span>Strength Training & Fitness</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="values" class="section-wrap">
+        <div class="section-header">
+            <h2>Expectations & Compatibility</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Care Instructions</h3>
+                <p>I thrive on direct, sophisticated communication. Quality time is my primary currency. I don’t seek grand gestures; I seek a presence that feels like home.</p>
+            </div>
+            <div class="card">
+                <h3>Shared Vision</h3>
+                <p>• Transparency and honesty in all interactions.<br>• Personal ambition and mutual support.<br>• A shared appreciation for Ben.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-wrap">
+        <p style="color: var(--secondary); margin-bottom: 30px; letter-spacing: 1px;">To request future husband please contact</p>
+        <button class="cta-btn" onclick="alert('Invitation Received. Reach out via app or text.')">Inquire Privately</button>
+    </div>
+
+    <footer>
+        <p>Curated in Arizona • Just Ben.</p>
+        <p style="margin-top: 15px; opacity: 0.3;">© 2026 BARELA PREMIER. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+</html>
