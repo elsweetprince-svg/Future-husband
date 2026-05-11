@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Barela | Your Future Starts Now</title>
+    <style>
+        :root {
+            --bg: #0b0b0c;
+            --card: #161617;
+            --accent: #2997ff;
+            --text: #f5f5f7;
+            --secondary: #a1a1a6;
+            --success: #62d262;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(15px);
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+            z-index: 1000;
+            text-align: center;
+        }
+        nav a { color: var(--text); text-decoration: none; margin: 0 20px; font-size: 14px; opacity: 0.8; transition: 0.3s; }
+        nav a:hover { opacity: 1; color: var(--accent); }
+
+        .hero { text-align: center; padding: 100px 20px; background: radial-gradient(circle at center, #1d1d1f 0%, #0b0b0c 100%); }
+        .badge { background: var(--accent); color: white; padding: 5px 12px; border-radius: 50px; font-size: 12px; font-weight: bold; margin-bottom: 20px; display: inline-block; }
+        h1 { font-size: clamp(40px, 8vw, 80px); font-weight: 700; margin: 0; letter-spacing: -0.03em; }
+        .hero p { font-size: clamp(18px, 3vw, 26px); color: var(--secondary); margin-top: 15px; }
+        
+        .profile-container { position: relative; margin-top: 50px; }
+        .profile-pic { width: 90%; max-width: 450px; border-radius: 40px; box-shadow: 0 0 50px rgba(41, 151, 255, 0.2); }
+
+        .section-title { text-align: center; margin: 80px 0 40px; }
+        .section-title h2 { font-size: 40px; letter-spacing: -0.01em; }
+
+        .bento { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; width: 90%; max-width: 1200px; margin: 0 auto; }
+        .card { background: var(--card); border-radius: 30px; padding: 40px; transition: 0.4s; position: relative; overflow: hidden; }
+        .card:hover { transform: scale(1.02); }
+        .card h3 { font-size: 24px; margin-top: 0; }
+        .card p { color: var(--secondary); line-height: 1.6; }
+
+        /* Comparison Table Style */
+        .spec-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #333; }
+        .check { color: var(--success); font-weight: bold; }
+
+        .cta-wrap { text-align: center; padding: 100px 20px; background: #161617; margin-top: 80px; }
+        .cta-btn { background: var(--accent); color: white; padding: 20px 45px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 20px; display: inline-block; cursor: pointer; border: none; transition: 0.3s; }
+        .cta-btn:hover { background: #0077ed; transform: translateY(-3px); }
+
+        footer { text-align: center; padding: 50px; color: #424245; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#specs">Specs</a>
+        <a href="#partnership">Protocol</a>
+        <a href="#care">Support</a>
+        <a href="#contact">Inquire</a>
+    </nav>
+
+    <div class="hero">
+        <div class="badge">NOW SHIPPING</div>
+        <h1>Your future starts now.</h1>
+        <p>Adam Barela. Version 34.0</p>
+        <div class="profile-container">
+            <img src="https://i.ibb.co/6Ry6Mn3r/image-2.png" alt="Adam Barela" class="profile-pic">
+        </div>
+    </div>
+
+    <div id="specs" class="section-title">
+        <h2>Hardware Specs</h2>
+        <p style="color: var(--secondary)">Everything the "Employer Hat" needs to see.</p>
+    </div>
+
+    <div class="bento">
+        <div class="card">
+            <h3>Standard Baseline</h3>
+            <div class="spec-row"><span>Stable Employment</span> <span class="check">✔ Verified</span></div>
+            <div class="spec-row"><span>Transportation</span> <span class="check">✔ 2019 Accent</span></div>
+            <div class="spec-row"><span>Criminal History</span> <span class="check">✔ 0% Prison Rate</span></div>
+            <div class="spec-row"><span>Smoker Status</span> <span class="check">✘ Not Detected</span></div>
+            <div class="spec-row"><span>Kid Count</span> <span class="check">0.0 (Firm)</span></div>
+        </div>
+
+        <div class="card" style="background: linear-gradient(145deg, #161617, #2c2c2e);">
+            <h3>Internal Storage</h3>
+            <p><strong>Ben (Dog Accessory):</strong> Included as a non-removable bundle. Hyper-social, timid, and requires daily walking updates.</p>
+            <p><strong>Operating System:</strong> Native Sarcasm (v14.2). Highly stubborn logic board. Requires caffeine to boot up before 9 AM.</p>
+        </div>
+    </div>
+
+    <div id="partnership" class="section-title">
+        <h2>Partnership Protocol</h2>
+    </div>
+
+    <div class="bento">
+        <div class="card">
+            <h3>The Value Proposition</h3>
+            <p>I don't just "show up." I bring Acts of Service. I'm the partner who handles the logistical nonsense of life so you can actually enjoy your peace. I’m the silent upgrade to your daily routine.</p>
+        </div>
+        <div class="card">
+            <h3>Versatile Modes</h3>
+            <p><strong>Mosh Pit Mode:</strong> Optimized for AFI, System of a Down, and Kendrick Lamar festivals.</p>
+            <p><strong>Couch Mode:</strong> Highly compatible with Supernatural Horror and Epic Fantasy marathons.</p>
+        </div>
+    </div>
+
+    <div id="care" class="section-title">
+        <h2>Maintenance & Support</h2>
+    </div>
+
+    <div class="bento">
+        <div class="card" style="grid-column: span 1;">
+            <h3>How to Care</h3>
+            <p>Adam operates best on Direct Communication. No hidden menus or subtext. Give him Quality Time and a check-in, and the system stays 100% stable.</p>
+        </div>
+        <div class="card">
+            <h3>Critical Errors (Dealbreakers)</h3>
+            <p>• Dishonesty in the firmware.<br>• Low ambition/No drive.<br>• "Ben" incompatibility (Fatal Error).</p>
+        </div>
+    </div>
+
+    <div id="contact" class="cta-wrap">
+        <p style="color: var(--secondary); font-size: 20px; margin-bottom: 20px;">To request future husband please contact</p>
+        <button class="cta-btn" onclick="alert('System Ready. Reach out via text or app!')">Inquire Now</button>
+    </div>
+
+    <footer>
+        <p>Designed in Arizona • Built for Longevity • No Refunds.</p>
+        <p style="margin-top: 10px; opacity: 0.5;">© 2026 Barela Technologies. Just Ben.</p>
+    </footer>
+
+</body>
+</html>
