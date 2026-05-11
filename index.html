@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Barela | Your Future Starts Now</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --card: #111111;
+            --accent: #d4af37; 
+            --text: #ffffff;
+            --secondary: #8e8e93;
+        }
+        html { scroll-behavior: smooth; } /* This makes the tabs "glide" down */
+        body { font-family: "SF Pro Display", -apple-system, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; line-height: 1.6; }
+        
+        nav { 
+            position: sticky; 
+            top: 0; 
+            background: rgba(0,0,0,0.95); 
+            padding: 20px 0; 
+            border-bottom: 1px solid #222; 
+            z-index: 1000; 
+            text-align: center; 
+        }
+        nav a { color: var(--text); text-decoration: none; margin: 0 15px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.6; transition: 0.3s; cursor: pointer; }
+        nav a:hover { opacity: 1; color: var(--accent); }
+
+        .hero { text-align: center; padding: 120px 20px; }
+        .badge { color: var(--accent); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; display: block; }
+        h1 { font-size: clamp(35px, 8vw, 70px); font-weight: 700; margin: 0; letter-spacing: -0.04em; }
+        .hero p { font-size: 18px; color: var(--secondary); margin-top: 15px; }
+
+        .section-wrap { width: 90%; max-width: 1100px; margin: 0 auto; padding: 100px 0; border-top: 1px solid #111; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: var(--card); padding: 40px; border-radius: 4px; border: 1px solid #222; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); }
+        .card h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-bottom: 20px; }
+
+        .stars { color: var(--accent); margin-bottom: 10px; font-size: 12px; }
+        .review-text { font-style: italic; color: var(--text); font-size: 14px; margin-bottom: 10px; }
+        .reviewer { font-size: 10px; text-transform: uppercase; color: var(--secondary); }
+
+        .quiz-container { background: #080808; border: 1px solid var(--accent); padding: 40px; border-radius: 8px; text-align: center; max-width: 600px; margin: 0 auto; }
+        .quiz-option { display: block; width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #333; background: transparent; color: var(--text); cursor: pointer; transition: 0.3s; font-size: 14px; }
+        .quiz-option:hover { border-color: var(--accent); color: var(--accent); }
+        
+        #contact-reveal { display: none; margin-top: 30px; padding: 20px; border-top: 1px solid var(--accent); }
+        .cta-btn { border: 1px solid var(--accent); color: var(--accent); padding: 15px 40px; text-decoration: none; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; background: transparent; cursor: pointer; display: inline-block; margin-top: 10px; }
+        
+        .profile-pic { width: 85%; max-width: 380px; border-radius: 20px; margin-top: 40px; border: 1px solid #333; }
+        footer { text-align: center; padding: 80px 20px; color: #444; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#credentials">Specs</a>
+        <a href="#lifestyle">Lifestyle</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#quiz">Assessment</a>
+    </nav>
+
+    <div class="hero">
+        <span class="badge">Barela Premier • 2026 Collection</span>
+        <h1>Your future starts now.</h1>
+        <p>Adam Barela • 34 • ASU Alumni</p>
+        <img src="https://i.ibb.co/6Ry6Mn3r/image-2.png" alt="Adam Barela" class="profile-pic">
+    </div>
+
+    <div id="credentials" class="section-wrap">
+        <div class="grid">
+            <div class="card">
+                <h3>Vetting & Stats</h3>
+                <p><strong>Professional:</strong> Banking sector executive with high-level stability.</p>
+                <p><strong>Ambition:</strong> Currently training for a marathon (foundation phase).</p>
+                <p><strong>Legacy:</strong> Warm to the idea of building a family with a partner.</p>
+            </div>
+            <div class="card">
+                <h3>The Enrichment Suite</h3>
+                <p><strong>Demeanor:</strong> Native sarcasm and logical communication. Coffee-dependent mornings.</p>
+                <p><strong>The Ben Factor:</strong> Calm, playful, and non-vocal companion. A core lifestyle asset.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="lifestyle" class="section-wrap">
+        <div class="grid">
+            <div class="card">
+                <h3>The Weekend Protocol</h3>
+                <p>A sophisticated blend of recovery and connection: relaxing, professional-grade napping, and time with family.</p>
+            </div>
+            <div class="card">
+                <h3>Atmosphere</h3>
+                <p>AFI, Bad Bunny, and Kendrick Lamar. Proficient in both festival energy and quiet horror cinema nights.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="reviews" class="section-wrap">
+        <h3 style="text-align:center; letter-spacing: 3px; color: var(--accent); margin-bottom: 40px;">CLIENT TESTIMONIALS</h3>
+        <div class="grid">
+            <div class="card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"High-quality sarcasm. 10/10."</p>
+                <p class="reviewer">— Anonymous Ex</p>
+            </div>
+            <div class="card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Exceptional at the daily walk protocol. Shares snacks."</p>
+                <p class="reviewer">— Ben (The Dog)</p>
+            </div>
+            <div class="card">
+                <div class="stars">★★★★☆</div>
+                <p class="review-text">"Refuses to stop calling himself 'Premier Collection'."</p>
+                <p class="reviewer">— Concerned Friend</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz" class="section-wrap">
+        <div class="quiz-container">
+            <h3>Eligibility Assessment</h3>
+            <p id="question-text">Question 1: Ben is calm, quiet, and loves to play. Thoughts?</p>
+            <div id="options-container">
+                <button class="quiz-option" onclick="handleQuiz(true)">I'm a dog person. Let's play.</button>
+                <button class="quiz-option" onclick="handleQuiz(false)">I prefer a pet-free space.</button>
+            </div>
+            
+            <div id="contact-reveal">
+                <p style="color: var(--accent); margin-bottom: 20px;">ELIGIBILITY VERIFIED.</p>
+                <button class="cta-btn" onclick="alert('Proceed via the app or text!')">Inquire Privately</button>
+            </div>
+            <div id="quiz-result"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Curated in Arizona • ASU Heritage • Just Ben.</p>
+        <p style="margin-top: 15px; opacity: 0.3;">© 2026 BARELA PREMIER. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        let currentStep = 0;
+        let score = 0;
+        const questions = [
+            { q: "Question 2: Does advanced sarcasm work for you?", a: "I speak it fluently.", b: "I'm literal.", correct: 'a' },
+            { q: "Question 3: Ideal weekend energy?", a: "Relaxing, naps, and family.", b: "Constant high-stress.", correct: 'a' },
+            { q: "Question 4: Feelings on the ASU Sun Devils?", a: "Go Devils!", b: "I'm a rival fan.", correct: 'a' },
+            { q: "Question 5: What’s the goal?", a: "Open to casual leading to serious.", b: "Strictly casual only.", correct: 'a' }
+        ];
+
+        function handleQuiz(isCorrect) {
+            if(isCorrect) score++;
+            if(currentStep < questions.length) {
+                const nextQ = questions[currentStep];
+                document.getElementById('question-text').innerText = nextQ.q;
+                document.getElementById('options-container').innerHTML = `
+                    <button class="quiz-option" onclick="handleQuiz(true)">${nextQ.a}</button>
+                    <button class="quiz-option" onclick="handleQuiz(false)">${nextQ.b}</button>
+                `;
+                currentStep++;
+            } else { finishQuiz(); }
+        }
+
+        function finishQuiz() {
+            document.getElementById('question-text').style.display = 'none';
+            document.getElementById('options-container').style.display = 'none';
+            if(score >= 4) { document.getElementById('contact-reveal').style.display = 'block'; } 
+            else { document.getElementById('quiz-result').innerHTML = "<p>STATUS: INCOMPATIBLE.</p>"; }
+        }
+    </script>
+</body>
+</html>
